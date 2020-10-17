@@ -24,8 +24,6 @@
 
 # 라이브러리 추가
 
-![](C:\choimory Files\others\capture\Tiles 3 사용하기\2020-10-17 23 51 22.png)
-
 - tiles-core
 - tiles-jsp
   - JSP에서 타일즈 태그를 사용할 수 있게 해주는 taglib을 명시하려면 tiles-jsp 라이브러리도 추가되어야함 
@@ -34,8 +32,6 @@
 > Tiles 3는 Spring 4부터 가능
 
 # 레이아웃 템플릿 JSP파일 작성
-
-![](C:\choimory Files\others\capture\Tiles 3 사용하기\2020-10-17 23 51 33.png)
 
 ## taglib 선언
 
@@ -52,8 +48,6 @@
 
 
 # 타일즈 설정 XML파일 작성
-
-![](C:\choimory Files\others\capture\Tiles 3 사용하기\2020-10-17 23 51 51.png)
 
 ## DTD
 
@@ -85,8 +79,6 @@
 
 # 서블릿 설정   
 
-![](C:\choimory Files\others\capture\Tiles 3 사용하기\2020-10-17 23 52 04.png)
-
 UrlBasedViewResolver와 TilesConfigurer의 빈을 생성하고 설정해준다. 이때 설정값에 Tiles2, Tiles3가 들어가는 부분에 타일즈 버전을 잘못 입력하지 않도록 주의
 
 - UrlBasedViewResolver
@@ -112,5 +104,5 @@ UrlBasedViewResolver와 TilesConfigurer의 빈을 생성하고 설정해준다. 
 
 타일즈 설정 파일에서 설정한 이름대로 뷰를 반환하면 사용이 가능하게 됨
 
-![](C:\choimory Files\others\capture\Tiles 3 사용하기\2020-10-17 23 52 08.png)
+
 
