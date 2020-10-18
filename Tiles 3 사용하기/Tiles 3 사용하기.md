@@ -24,7 +24,7 @@
 
 # 라이브러리 추가
 
-![](C:\choimory Files\others\capture\Tiles 3 사용하기\2020-10-17 23 51 22.png)
+![](.\2020-10-17 23 51 22.png)
 
 - tiles-core
 - tiles-jsp
@@ -35,7 +35,7 @@
 
 # 레이아웃 템플릿 JSP파일 작성
 
-![](C:\choimory Files\others\capture\Tiles 3 사용하기\2020-10-17 23 51 33.png)
+![](.\2020-10-17 23 51 33.png)
 
 ## taglib 선언
 
@@ -53,7 +53,7 @@
 
 # 타일즈 설정 XML파일 작성
 
-![](C:\choimory Files\others\capture\Tiles 3 사용하기\2020-10-17 23 51 51.png)
+![](.\2020-10-17 23 51 51.png)
 
 ## DTD
 
@@ -85,7 +85,7 @@
 
 # 서블릿 설정   
 
-![](C:\choimory Files\others\capture\Tiles 3 사용하기\2020-10-17 23 52 04.png)
+![](.\2020-10-17 23 52 04.png)
 
 UrlBasedViewResolver와 TilesConfigurer의 빈을 생성하고 설정해준다. 이때 설정값에 Tiles2, Tiles3가 들어가는 부분에 타일즈 버전을 잘못 입력하지 않도록 주의
 
@@ -93,9 +93,9 @@ UrlBasedViewResolver와 TilesConfigurer의 빈을 생성하고 설정해준다. 
 
   - ```xml
     	<beans:bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-    		<beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>
-    		<beans:property name="order" value="1"/>
-    	</beans:bean>
+      		<beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>
+      		<beans:property name="order" value="1"/>
+      	</beans:bean>
     ```
 
     여기서 order는 다른 ViewResolver들 사이에 먼저 적용될 우선순위임. 타일즈뷰리졸버>JSP뷰리졸버가 되도록 order값을 설정함.
@@ -104,13 +104,13 @@ UrlBasedViewResolver와 TilesConfigurer의 빈을 생성하고 설정해준다. 
 
   - ```xml
     	<beans:bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
-    		<beans:property name="definitions" value="/WEB-INF/tiles/tiles-definition.xml"/>
-    	</beans:bean>	
+      		<beans:property name="definitions" value="/WEB-INF/tiles/tiles-definition.xml"/>
+      	</beans:bean>	
     ```
 
 # 사용
 
 타일즈 설정 파일에서 설정한 이름대로 뷰를 반환하면 사용이 가능하게 됨
 
-![](C:\choimory Files\others\capture\Tiles 3 사용하기\2020-10-17 23 52 08.png)
+![](.\2020-10-17 23 52 08.png)
 
